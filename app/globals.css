@@ -1,3 +1,73 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-display: swap;
+}
+*:before {
+  box-sizing: border-box;
+}
+
+*:after {
+  box-sizing: border-box;
+}
+body {
+  scroll-behavior: smooth !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  overflow-x: hidden !important;
+  min-height: 100vh;
+  font-display: swap;
+}
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+h1 {
+  font-size: clamp(1.4rem, 5vw, 34px);
+}
+h2 {
+  @apply scroll-mt-44;
+  font-size: clamp(1rem, 5vw, 30px);
+}
+/* these are the class generated for universal use */
+.flex-center {
+  @apply flex items-center justify-center;
+}
+.flex-between {
+  @apply flex justify-between items-center;
+}
+.flex-start {
+  @apply flex justify-start items-center;
+}
+.flex-evenly {
+  @apply flex justify-evenly items-center;
+}
+.flex-around {
+  @apply flex justify-around items-center;
+}
+.transition-animation {
+  @apply transition-all ease-in-out duration-700;
+}

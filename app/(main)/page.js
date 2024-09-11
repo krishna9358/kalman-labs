@@ -1,6 +1,6 @@
+import { Container } from "@/components/layout/wireframe";
 import { IconList } from "@/icons/Iconlist";
 import { Button } from "@nextui-org/react";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -19,6 +19,10 @@ export default function Home() {
       >
         Dive In
       </Button>
+      {/* container will be used to wrap the content==> on the very large screen as well it caters the standard width */}
+      <Container>
+        <h1>Hello World</h1>
+      </Container>
     </div>
   );
 }
