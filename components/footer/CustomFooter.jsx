@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Facebook, Twitter, Instagram } from 'lucide-react'
+import { FaMedium, FaLinkedin, FaInstagram } from 'react-icons/fa'
+
 
 
 export default function CustomFooter() {
@@ -30,14 +31,14 @@ export default function CustomFooter() {
           </div>
           <div className="flex flex-col items-center md:items-end w-full md:w-auto">
             <div className="flex space-x-4 mb-4">
-              <Link href="#" aria-label="Facebook" className="bg-white rounded-full p-2 hover:bg-gray-200 transition-colors">
-                <Facebook size={24} className="text-gray-900" />
+            <Link href="#" aria-label="Medium" className="bg-white rounded-full p-2 hover:bg-gray-200 transition-colors">
+                <FaMedium size={24} className="text-gray-900" />
               </Link>
-              <Link href="#" aria-label="Twitter" className="bg-white rounded-full p-2 hover:bg-gray-200 transition-colors">
-                <Twitter size={24} className="text-gray-900" />
+              <Link href="#" aria-label="LinkedIn" className="bg-white rounded-full p-2 hover:bg-gray-200 transition-colors">
+                <FaLinkedin size={24} className="text-gray-900" />
               </Link>
               <Link href="#" aria-label="Instagram" className="bg-white rounded-full p-2 hover:bg-gray-200 transition-colors">
-                <Instagram size={24} className="text-gray-900" />
+                <FaInstagram size={24} className="text-gray-900" />
               </Link>
             </div>
             <p className="text-sm text-gray-400 text-center md:text-right">
