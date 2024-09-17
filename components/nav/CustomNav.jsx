@@ -3,10 +3,8 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { HiOutlineMenuAlt3, HiOutlineX } from 'react-icons/hi';
-// import styles from './Navbar.module.css'; 
-// import logo from "app/public/images/Mask group.png"; 
 
-export default function Navbar() {
+export default function CustomNav() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -16,8 +14,14 @@ export default function Navbar() {
   return (
     <nav className="bg-white shadow-md py-4 px-4 lg:px-24 flex items-center justify-between relative">
       {/* Logo and Site Name */}
-      <div className="flex items-center space-x-4">
-        {/* <Image src={logo} alt="Logo" width={171} height={32} className="mr-4" /> */}
+      <div className="flex items-center">
+        <Image 
+          src="/images/Ellipse 181@2x.png" 
+          alt="Logo" 
+          width={32} 
+          height={32} 
+          className="mr-2 w-auto h-auto" // Reduced space
+        />
         <h1 className="text-xl font-bold">kalman-labs</h1>
       </div>
 
