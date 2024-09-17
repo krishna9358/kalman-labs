@@ -14,9 +14,11 @@
     "antd": "^5.20.6",
     "classnames": "^2.5.1",
     "framer-motion": "^11.5.4",
-    "next": "14.2.9",
-    "react": "^18",
-    "react-dom": "^18"
+    "kalman-labs": "file:",
+    "next": "^14.2.9",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.3.0"
   },
   "devDependencies": {
     "eslint": "^8",
