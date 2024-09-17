@@ -61,12 +61,12 @@ export default function Home() {
 			<Container>
 				<h1>Hello World</h1>
 			</Container>
-			{/* <HomeCard
+			<HomeCard
 				heading={cardData[0].heading}
 				num={cardData[0].num}
 				img={cardData[0].img}
 				content={cardData[0].content}
-			/> */}
+			/>
 		</div>
 	);
 }
