@@ -10,7 +10,7 @@ const Card = () => {
       </div>
       <div className="p-4">
         <h2 className="text-green-600 text-lg font-semibold">Aditya Raj</h2>
-        <p className="text-gray-700 text-base mt-2">Constructive and destructive waves</p>
+        <p className="text-gray-700 text-xl font-bold mt-2">Constructive and destructive waves</p>
         <a
           href=""
           className="inline-block mt-4 text-yellow-500 font-semibold hover:text-yellow-600"
