@@ -27,7 +27,7 @@ const HomeCard = (props) => {
 					{num}
 				</div>
 				<div>
-					<h1 className="text-3xl font-bold sm:leading-normal sm:tracking-wide">
+					<h1 className="!text-card-title-clamp font-bold sm:leading-normal sm:tracking-wide">
 						{head1} <span className=" font-normal">{head2}</span>
 					</h1>
 				</div>

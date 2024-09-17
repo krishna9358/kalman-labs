@@ -26,7 +26,7 @@ module.exports = {
   			'heading-clamp': 'clamp(1.2rem, 6vw, 50.10px)',
   			'md-heading-clamp': 'clamp(1.2rem, 6vw, 45.10px)',
   			'large-heading-clamp': 'clamp(1rem, 9vw, 58.10px)',
-  			'card-title-clamp': 'clamp(1rem, 5vw, 37px)',
+  			'card-title-clamp': 'clamp(1rem, 5vw, 32px)',
   			'small-heading-clamp': 'clamp(1rem,3vw, 17px)'
   		},
   		colors: {
