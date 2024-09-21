@@ -1,3 +1,5 @@
+
+import Footer from "@/components/footer/CustomFooter";
 import React from "react";
 
 const ProjectPage = () => {
@@ -13,6 +15,7 @@ const ProjectPage = () => {
         <Card/>
         <Card/>
       </div>
+      <Footer />
     </div>
   );
 };
