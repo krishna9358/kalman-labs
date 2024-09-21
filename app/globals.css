@@ -71,3 +71,27 @@ h2 {
 .transition-animation {
   @apply transition-all ease-in-out duration-700;
 }
+
+/* Navbar CSS */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: gray;
+  padding: 8px 16px;
+  font-family: 'Times New Roman', sans-serif;
+}
+
+nav a:hover {
+  color: black;
+}
+
+/* Mobile Menu Styles */
+.relative:hover .absolute {
+  opacity: 1;
+  display: block;
+}
