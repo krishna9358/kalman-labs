@@ -9,6 +9,7 @@ function InfoCard({ imageSrc, title, description }) {
           loading="lazy" 
           src={imageSrc} 
           alt={title} 
+          layout="responsive" 
           width={140} // Specify width
           height={140} // Specify height
           className="object-contain max-w-full" 

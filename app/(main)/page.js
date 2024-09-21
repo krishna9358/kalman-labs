@@ -99,75 +99,78 @@ export default function Home() {
       </div>
 
       {/* Second background section */}
-      <div className="relative h-[400px] w-full w-screen mb-0"> {/* Remove bottom margin */}
-        <Image
-          src={SecondBackground}
-          alt="Second Background"
-          layout="fill"
-          objectFit="cover"
-          className="absolute inset-0 z-0"
-        />
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center p-8">
-          {/* Scientist image moved slightly up */}
-          <div className="flex items-center mt-[-30px]">
-            <div className="relative mr-6">
-              <Image
-                src={ScientistImage}
-                alt="Scientist"
-                width={150}
-                height={150}
-                className="rectangle"
-              />
-              {/* Icon image at top-left of the Scientist image */}
-              <div className="absolute top-0 left-0 right-[-40] z-10">
-                <Image
-                  src={IconImage1}
-                  alt="Icon 1"
-                  width={40}
-                  height={40}
-                />
-              </div>
-            </div>
+      <div className="relative h-[400px] w-screen w-full mb-0">
+		<Image
+			src={SecondBackground}
+			alt="Second Background"
+			layout="fill"
+			objectFit="cover"
+			className="absolute inset-0 z-0"
+		/>
+		<div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center p-4 sm:p-8">
+			{/* Scientist image moved slightly up */}
+			<div className="flex items-center mt-[-20px] sm:mt-[-30px]">
+			<div className="relative mr-6">
+				<Image
+				src={ScientistImage}
+				alt="Scientist"
+				width={120}
+				height={120}
+				className="rounded-full" // Added rounded corners
+				/>
+				{/* Icon image at top-left of the Scientist image */}
+				<div className="absolute top-0 left-0 z-10">
+				<Image
+					src={IconImage1}
+					alt="Icon 1"
+					width={30}
+					height={30}
+				/>
+				</div>
+			</div>
 
-            {/* Quote and scientist's name next to the image */}
-            <div className="relative flex flex-col items-start">
-              {/* Add margin-top to ensure no overlap */}
-              <p className="text-xl font-serif italic mb-2 mt-4">
-                "An year spent in artificial intelligence <br />
-                is enough to make one believe in God."
-              </p>
-              <p className="font-bold">- Alan Perlis</p>
-              {/* Adjust icon position relative to the quote */}
-              <div className="absolute bottom-[-80px] left-[-80] right-0 z-10">
-                <Image
-                  src={IconImage2}
-                  alt="Icon 2"
-                  width={40}
-                  height={40}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+			{/* Quote and scientist's name next to the image */}
+			<div className="relative flex flex-col items-start">
+				<p className="text-lg sm:text-xl font-serif italic mb-2 mt-4 text-center sm:text-left">
+				"A year spent in artificial intelligence <br />
+				is enough to make one believe in God."
+				</p>
+				<p className="font-bold">- Alan Perlis</p>
+				{/* Adjust icon position relative to the quote */}
+				<div className="absolute bottom-[-60px] left-[-60px] sm:bottom-[-80px] sm:left-[-80px] z-10">
+				<Image
+					src={IconImage2}
+					alt="Icon 2"
+					layout="responsive" 
+					width={30}
+					height={30}
+				/>
+				</div>
+			</div>
+			</div>
+		</div>
 
-        {/* Corner images */}
-        <div className="absolute top-0 right-0 z-10">
-          <Image
-            src={CornerImage2}
-            alt="Corner Image 1"
-            width={150}
-            height={150}
-          />
-        </div>
-        <div className="absolute bottom-0 left-0 z-10">
-          <Image
-            src={CornerImage1}
-            alt="Corner Image 2"
-            width={400}
-            height={100}
-          />
-        </div>
-      </div>
+		{/* Corner images */}
+		<div className="absolute top-0 right-0 z-10 w-[15%] sm:w-[150px]">
+			<Image
+			src={CornerImage2}
+			alt="Corner Image 1"
+			layout="responsive" // Makes it responsive
+			width={150}
+			height={150}
+			/>
+		</div>
+		<div className="absolute bottom-0 left-0 z-10 w-[30%] sm:w-[400px]">
+			<Image
+			src={CornerImage1}
+			alt="Corner Image 2"
+			layout="responsive" // Makes it responsive
+			width={400}
+			height={100}
+			/>
+		</div>
+		</div>
+
 
       {/* Reference for About Us component */}
       <div ref={aboutUsRef}>
@@ -179,6 +182,7 @@ export default function Home() {
         <Image
           src={SeparatorImage}
           alt="Separator"
+		  layout="responsive" 
           width={300}
           height={60}
         />
@@ -193,7 +197,7 @@ export default function Home() {
 			<Image
 			  src={CardBackground}
 			  alt="Card Background"
-			  layout="fill"
+			  layout="responsive" 
 			  objectFit="cover"
 			/>
 		  </div>
@@ -214,6 +218,7 @@ export default function Home() {
 		<Image
 			src={SeparatorImage}
 			alt="Separator"
+			layout="responsive" 
 			width={300}
 			height={60}
 		/>

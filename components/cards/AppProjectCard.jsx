@@ -11,7 +11,7 @@ const AppProjectCard = ({ title, imageSrc, projectName }) => {
         <Image
           src={imageSrc}
           alt={title}
-          layout="fill"
+          layout="fill" 
           objectFit="cover"
           className="scale-90 h-full" // Scale down the image to 90%
         />

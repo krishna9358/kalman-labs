@@ -24,6 +24,7 @@ const HomeCard = (props) => {
 		<div className="w-full sm:w-[75rem] p-4 flex justify-center flex-col sm:flex-row items-center bg-cover gap-[2.875rem] font-serif m-12 text-left">
 			<Image
 				src={cardImg}
+				layout="responsive" 
 				className=" w-[23.75rem] flex-1"
 				alt="Home Card Background"
 			/>
