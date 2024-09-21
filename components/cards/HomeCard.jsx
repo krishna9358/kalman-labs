@@ -1,11 +1,16 @@
+"use client";
+
 import React from "react";
 import Bg from "@/public/images/homePageCardBg.png";
 import Card1 from "@/public/images/card1.png";
 import Image from "next/image"; // Import the 'Image' component from the appropriate library
 import { IconList } from "@/icons/Iconlist";
 import { Button } from "@nextui-org/react";
+import { useRouter } from 'next/navigation';// Import the useRouter hook
 
 const HomeCard = (props) => {
+	const router = useRouter(); // Initialize the router for navigation
+
 	const head = props.heading;
 	const ind1 = head.indexOf(":");
 	const head1 = head.slice(0, ind1 + 1);
@@ -13,6 +18,7 @@ const HomeCard = (props) => {
 	const num = props.num;
 	const cardImg = props.img;
 	const content = props.content;
+
 
 	return (
 		<div className="w-full sm:w-[75rem] p-4 flex justify-center flex-col sm:flex-row items-center bg-cover gap-[2.875rem] font-serif m-12 text-left">
@@ -42,6 +48,7 @@ const HomeCard = (props) => {
 					endContent={
 						<IconList.ArrowTopRightOnSquareIcon className="w-5 h-5" />
 					}
+					onClick={() => router.push('/project')}
 				>
 					Glance In
 				</Button>

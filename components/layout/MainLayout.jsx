@@ -6,7 +6,7 @@ export function Layout({ children }) {
   return (
     <ProviderWrapper>
       <CustomNav />
-      {children}
+      <div className="mt-0 mb-0">{children}</div>
       <CustomFooter />
     </ProviderWrapper>
   );
