@@ -18,22 +18,22 @@ const cardData = [
   {
     imageSrc: image2,
     title: "Collaborative Excellence",
-    description: "Pioneering research and development company at the intersection of technology and innovation spanning deep learning, genomics, decentralized & more"
+    description: "We bring together students, professors, and industry experts to create a dynamic ecosystem where research and innovation thrive. By fostering interdisciplinary collaboration, we drive impactful progress."
   },
   {
     imageSrc: image3,
     title: "Inspired by Kalman Filter",
-    description: "Pioneering research and development company at the intersection of technology and innovation spanning deep learning, genomics, decentralized & more"
+    description: "Just as the Kalman filter refines predictions in complex systems, we optimize research by refining ideas and turning them into groundbreaking advancements."
   },
   {
     imageSrc: image4,
     title: "Our Mission",
-    description: "Pioneering research and development company at the intersection of technology and innovation spanning deep learning, genomics, decentralized & more"
+    description: "optimize innovation, bridge the gap between academia and industry, and empower the next generation of researchers with advanced skills."
   },
   {
     imageSrc: image5,
     title: "Join Us",
-    description: "Pioneering research and development company at the intersection of technology and innovation spanning deep learning, genomics, decentralized & more"
+    description: "Whether you're a student eager to learn, a professor with groundbreaking ideas, or an industry specialist looking to collaborate, we invite you to drive the future of technology together!"
   }
 ];
 
