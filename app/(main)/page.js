@@ -209,44 +209,11 @@ export default function Home() {
 			  num={card.num}
 			  img={card.img}
 			  content={card.content}
+			  projectId={index+1}
 			/>
 		  </div>
 		</div>
 	  ))}	  
-		{/* Big title "Our Research" section */}
-		<div className="flex flex-col items-center mb-0 mt-12"> {/* Removed margin-bottom */}
-		<Image
-			src={SeparatorImage}
-			alt="Separator"
-			layout="responsive" 
-			width={300}
-			height={60}
-		/>
-		<h2 className="text-5xl font-bold mt-16 mb-10">Ongoing Projects</h2>
-		</div>
-		
-		<div className="overflow-x-auto whitespace-nowrap mb-0 w-full"> {/* Set to full width */}
-			<div className="flex"> {/* Remove w-full from the flex container */}
-				{projectCardData.map((card, index) => (
-				<div
-					key={index}
-					className={`relative w-[calc(50%)] mr-4 ${
-					index % 2 === 0 ? "bg-white" : "bg-yellow-200"
-					}`}
-					style={{ minWidth: "100px", flexShrink: 0, padding: "70px" }} // Ensure a minimum width for each card
-				>
-					<div className="p-10"> {/* Smaller padding for the actual card */}
-					<AppProjectCard
-						title={card.title}
-						imageSrc={card.imageSrc}
-						projectName={card.projectName}
-					/>
-					</div>
-				</div>
-				))}
-			</div>
-		</div>
-
 
 
       {/* Container will be used to wrap the content on very large screens */}

@@ -18,6 +18,7 @@ const HomeCard = (props) => {
 	const num = props.num;
 	const cardImg = props.img;
 	const content = props.content;
+	const projectId = props.projectId;
 
 
 	return (
@@ -49,7 +50,7 @@ const HomeCard = (props) => {
 					endContent={
 						<IconList.ArrowTopRightOnSquareIcon className="w-5 h-5" />
 					}
-					onClick={() => router.push('/project')}
+					onClick={() => router.push(`/project?projectId=${projectId}`)}
 				>
 					Glance In
 				</Button>

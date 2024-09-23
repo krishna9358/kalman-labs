@@ -29,10 +29,10 @@ export default function CustomNav() {
       <div className="hidden lg:flex lg:ml-auto">
         <ul className="flex space-x-8">
           <li className="hover:text-gray-700">
-            <a href="#chapters" className="text-gray-600">Chapters</a>
+            <a href="#chapters" className="text-gray-600">About Us</a>
           </li>
           <li className="hover:text-gray-700">
-            <a href="#team" className="text-gray-600">Meet The Team</a>
+            <a href="#team" className="text-gray-600">Ongoing Research</a>
           </li>
           <li className="hover:text-gray-700">
             <a href="#collaborate" className="text-gray-600">Collaborate</a>
