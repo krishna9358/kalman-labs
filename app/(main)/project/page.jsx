@@ -4,8 +4,11 @@ import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
+import DeepLearningHeader from "./DeepLearningheader";
+import IntroductionGroupGeneEditing from "@/components/introduction/IntroductionGroupGeneEditing";
 import project_2_header from "../../../public/images/project_2_header.jpg";
 import project_card from "../../../public/images/project_card.jpeg";
+import middle_image from "../../../public/images/middle_image.png"
 
 const ProjectPage = () => {
   const router = useRouter();
@@ -54,22 +57,37 @@ const ProjectPage = () => {
   };
 
   const currentProjectData = projectId ? projectData[projectId] : [];
-  const currentProjectDetails = projectId ? projectDetails[projectId] : null;
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       {/* Background Image Section */}
-      {currentProjectDetails && (
-        <div className="relative w-full h-64 sm:h-80 lg:h-96"> {/* Remove bottom margin */}
+      <main 
+  className="flex flex-col items-center justify-center bg-cover bg-center h-screen" 
+>
+  {/* Header Section */}
+  <div className="w-full w-screen mx-auto">
+    <DeepLearningHeader />
+  </div>
+
+  {/* Introduction Group Section */}
+  <div className="w-full max-w-screen-lg mx-auto mt-10">
+    <IntroductionGroupGeneEditing />
+  </div>
+
+  <div className="w-full max-w-screen-md my-10">
+    <Image 
         <Image
-          src={project_2_header}
-          alt="Full Width"
-          layout="fill"
-          objectFit="cover"
-          className="absolute inset-0 z-0"
-        />
-        </div>
-      )}
+    <Image 
+      src={middle_image}
+      alt="Separator"
+      layout="responsive" // Use responsive layout
+      width={600} // Set the width according to your design
+      height={150} // Set the height according to your design
+      className="object-contain"
+    />
+  </div>
+
+</main>
 
       {/* Cards Section */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 mb-12">

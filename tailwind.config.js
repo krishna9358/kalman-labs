@@ -76,7 +76,15 @@ module.exports = {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		}
-  	}
+  	},
+		// screens: {
+		//   // Custom max-width breakpoints
+		//   '2xl': { 'max': '1535px' },
+		//   'xl': { 'max': '1279px' },
+		//   'lg': { 'max': '1023px' },
+		//   'md': { 'max': '767px' },
+		//   'sm': { 'max': '639px' },
+		// },
   },
   darkMode: ["class", "class"],
   plugins: [nextui(), require("tailwindcss-animate")],

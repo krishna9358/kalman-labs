@@ -22,16 +22,15 @@ const HomeCard = (props) => {
 
 
 	return (
-		<div className="w-full sm:w-[75rem] p-4 flex justify-center flex-col sm:flex-row items-center bg-cover gap-[2.875rem] font-serif m-12 text-left">
+		<div className=" sm:w-[75rem] p-4 flex justify-center flex-col sm:flex-row items-center bg-cover gap-[2.875rem] font-serif m-12 text-left">
 			<Image
 				src={cardImg}
-				layout="responsive" 
 				className=" w-[23.75rem] flex-1"
 				alt="Home Card Background"
 			/>
 			<div className=" flex-[3] relative flex p-0 sm:p-6 flex-col items-center sm:items-start justify-center gap-2 sm:gap-6 mt-10">
 				<div className=" absolute top-[-5rem] sm:top-[-16rem] sm:left-[-0.5rem] text-6xl sm:text-[18.25rem] sm:opacity-30 text-[#D4AF37]">
-					<span className="opacity-75 sm:text-[8.75rem] mr-4">Section</span>
+					<span className="opacity-75 sm:text-[8.75rem] mr-4">Project</span>
 					{num}
 				</div>
 				<div>

@@ -70,7 +70,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-8 mt-0 pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="flex flex-col items-center min-h-screen  mt-0 pb-20 xs:p-20 font-[family-name:var(--font-geist-sans)]">
       {/* First Full-width background image */}
       <div className="relative w-full h-[600px] mb-0 w-screen"> {/* Remove bottom margin */}
         <Image
@@ -189,11 +189,10 @@ export default function Home() {
         <h2 className="text-6xl font-bold mt-16 mb-6">Our Research</h2>
       </div>
 
-      {/* Map over cardData to render multiple HomeCard components */}
       {cardData.map((card, index) => (
-		<div key={index} className="relative w-full mb-0"> {/* Remove margin-bottom */}
+		<div key={index} className="relative  mb-0"> {/* Remove margin-bottom */}
 		  {/* Background image before each card */}
-		  <div className="relative h-[300px] w-full mb-0"> {/* Remove margin-bottom */}
+		  <div className="relative h-[300px] mb-0"> {/* Remove margin-bottom */}
 			<Image
 			  src={CardBackground}
 			  alt="Card Background"
